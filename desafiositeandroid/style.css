@@ -1,2 +1,130 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2? family = Roboto: wght @ 100 & display = swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #2C365E;
+    --cor1: #0097D7;
+    --cor2: #36413E;
+    --cor3: #FFFFFC;
+    --cor4: #AF8D86;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque:'Roboto', sans-serif;
+    --fonte-android: 'idroid', sans-serif;
+}       
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-image: linear-gradient(to top, var(--cor0), var(--cor1));
+    padding: 10px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+    font-size: 23px;
+}
+
+header > p {
+    font-family: var(--fonte-destaque);
+    font-size: 15px;
+    
+}
+
+nav {
+    text-align: left;
+    color: var(--cor3);
+}
+
+body {
+    background-color: var(--cor1);
+    
+    text-align: justify;
+}
+
+img {
+    width: 100%;
+}
+
+.pequena {
+    width: 50%;
+    display: block;
+    margin:auto ;
+}
+
+main {
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+    min-width: 320px;
+    max-width: 1200px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+    margin-bottom: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}    
+
+.pequena2 {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.pequena3 {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+main > article > h2 {
+    font-family: var(--fonte-android);
+    color: var(--cor2);
+    font-size: 18px;
+        
+}
+
+main > article > h3 {
+    font-family: var(--fonte-android);
+    color: var(--cor2);
+    background-image: linear-gradient(to right, var(--cor3), var(--cor1));
+    font-size: 15px;
+}    
+
+main > article > p {
+    font-family: var(--fonte-destaque);
+}
+
+main > aside > h3 {
+    background-color: var(--cor1);
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+main > aside {
+    background-color: var(--cor4);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+footer {
+    background-color: var(--cor0);
+    color: white;
+    text-align: center;
+}
