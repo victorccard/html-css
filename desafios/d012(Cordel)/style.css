@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'cordel';
+    src: url(fontes/Cordel\ Encarnado.otf) format('opentype');
+    
+}
+
+.h1header {
+    font-size: 3em;
+    font-family: 'cordel';
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+.pheader {
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    padding-bottom: 50px;
+}
+header {
+    padding: 10px;
+    background-color: black;
+    margin: -10px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+
+.normal {
+    background-color: white;
+    color: black;
+}
+
+.imagem {
+    background-color: rgba(51, 50, 50, 0.945);
+    color: white;
+}
+
+a{ 
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
